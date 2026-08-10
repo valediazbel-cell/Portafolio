@@ -1,0 +1,251 @@
+:root {
+    --azulOscuro: #0F172A;
+    --morado: #9266B6;
+    --blanco: #FFFFFF;
+    --moradoClaro: #E5BDFF;
+}
+
+body {
+    background-color: var(--azulOscuro);
+     
+}
+
+.todo {
+     background: linear-gradient(
+        to right,
+        var(--morado) 0%,
+        var(--morado) 50%,
+        var(--azulOscuro) 50%,
+        var(--azulOscuro) 100%)
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white !important;
+}
+
+
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--blanco);
+    text-align: center;
+    font-size: 145px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--blanco);
+    text-align: center;
+    font-size: 145px;
+    font-weight: bold;
+}
+
+.desarrolladora {
+    text-align: right;
+    color: var(--blanco);
+    border: 2px solid var(--morado);
+    margin: 100px;
+    font-size: 50px;
+    width: fit-content;
+    padding: 16px;
+}
+
+.containerdesarolladora {
+    float: right;
+}
+
+/*Sobre mi*/
+.imgYTex {
+    display: flex;
+    width: 100%;
+}
+
+.tituloSobreMi {
+
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--blanco);
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    margin: 5%;
+
+}
+
+
+.texSobreMi {
+    width: 50%;
+    color: white;
+    font-size: 23px;
+    line-height: 1.1;
+    z-index: 4;
+    margin: 9%;
+    font-family: unset;
+
+}
+
+.imagenSobreMi {
+
+    top: 150px;
+    left: 10%;
+    width: 50%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 35px;
+    z-index: 4;
+    margin: 9%;
+
+}
+
+/*Proyectos*/
+.proyecto {
+    background-color: var(--azulOscuro);
+}
+.tituloproyecto {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--blanco);
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    margin: 5%;
+
+}
+
+.contenedorProyectos {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 18rem;
+    margin: 2%;
+    background-color: #430e67;
+    color: #f8f7f7;
+    font-family: unset;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.list-group-item {
+    background-color: #9266B6;
+    color: rgb(20, 3, 3);
+}
+
+.card-link {
+    color: #E5BDFF;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*CONTACTOS*/
+.titulocontacto {
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--blanco);
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    margin: 5%;
+
+}
+
+.info {
+
+    float: right;
+    margin: 7%;
+    color: white;
+    font-size: 30px;
+}
+
+.gmail {
+    color: #FFFFFF;
+}
+
+.redes {
+    display: flex;
+    gap: 60px;
+    margin-top: 65px;
+
+
+}
+
+.imagenRedes {
+    width: 90%;
+    height: 90px;
+}
+
+.imgcontactame {
+
+
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    right: 80px;
+    bottom: 0;
+    z-index: 2;
+    margin: 10%;
+}
+
+/* Skills*/
+
+.skill{
+    background-color: #0F172A;
+}
+
+.tituloSkills {
+    text-align: center;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+
+.imagenes {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    justify-items: center;
+}
+
+
+/* Círculos */
+.imagenes img {
+    width: 120px;
+    height: 120px;
+
+    padding: 30px;
+
+    object-fit: contain;
+
+    background-color: #f1f1f1;
+
+    border-radius: 50%;
+
+    transition: transform 0.3s;
+}
+
+
+/* Movimiento al pasar el mouse */
+.imagenes img:hover {
+    transform: translateY(-10px);
+}
+
+.separador {
+    width: 80%;
+    margin: 20px auto;
+    border: none;
+    border-top: 4px solid #9648d1;
+    border-radius: 10px;
+   background-color: #0F172A;
+}
