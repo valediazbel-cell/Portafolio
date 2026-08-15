@@ -339,3 +339,111 @@ h2 {
     border-radius: 10px;
    background-color: #0F172A;
 }
+
+/* CELULAR */
+@media (max-width: 768px) {
+
+ 
+
+    /* Inicio */
+    h1,
+    h2 {
+        font-size: 55px;
+    }
+
+    .desarrolladora {
+        font-size: 22px;
+        margin: 40px auto;
+    }
+
+
+    /* Sobre mí */
+    .imgYTex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagenSobreMi {
+        width: 80%;
+        height: 250px;
+        margin: 30px auto;
+    }
+
+    .texytituloSobreMi {
+        width: 100%;
+    }
+
+    .tituloSobreMi,
+    .tituloproyecto,
+    .titulocontacto {
+        font-size: 45px;
+    }
+
+    .texSobreMi {
+        width: 80%;
+        margin: 20px auto;
+        font-size: 17px;
+    }
+
+
+    /* Skills */
+    .imagenes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        width: 90%;
+    }
+
+    .imagenes img {
+        width: 75px;
+        height: 75px;
+        padding: 15px;
+    }
+
+
+    /* Proyectos */
+    .contenedorProyectos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 85% !important;
+        margin: 15px;
+    }
+
+
+    /* Contacto */
+    .infoEimag {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .imgcontactame {
+        width: 250px;
+        height: 250px;
+        margin: 20px;
+    }
+
+    .info {
+        float: none;
+        margin: 20px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .redes {
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
+
+    .imagenRedes {
+        width: 40px;
+        height: 40px;
+    }
+
+}
