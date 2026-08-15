@@ -24,15 +24,46 @@ body {
     top: 0;
     z-index: 1000;
     background-color: white !important;
+
 }
 
+.navbar-brand {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    font-size: 35px !important;
+    font-weight: bold !important;
+    color: var(--morado) !important;
+ -webkit-text-stroke: 1px  var(--azulOscuro);
+}
 
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 0;
+    height: 2px;
+    background-color: #9266B6;
+    transition: width 0.3s;
+}
+
+/* Cuando pasas el mouse */
+.navbar .nav-link:hover {
+    color: #480083;
+}
+
+.navbar .nav-link:hover::after {
+    width: 100%;
+}
+.navbar .nav-link:hover {
+    color: #9266B6;
+    transform: translateY(-2px);
+}
 
 h1 {
     font-family: 'Times New Roman', Times, serif;
     color: var(--blanco);
     text-align: center;
-    font-size: 145px;
+    font-size: 90px;
     font-weight: bold;
 }
 
@@ -40,7 +71,7 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
     color: var(--blanco);
     text-align: center;
-    font-size: 145px;
+    font-size: 90px;
     font-weight: bold;
 }
 
@@ -49,9 +80,16 @@ h2 {
     color: var(--blanco);
     border: 2px solid var(--morado);
     margin: 100px;
-    font-size: 50px;
+    font-size: 40px;
     width: fit-content;
     padding: 16px;
+      background: linear-gradient(
+        to right,
+        var(--morado) 0%,
+        var(--morado) 60%,
+        var(--azulOscuro) 50%,
+        var(--azulOscuro) 100%)  
+
 }
 
 .containerdesarolladora {
@@ -69,7 +107,7 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
     color: var(--blanco);
     text-align: center;
-    font-size: 100px;
+    font-size: 60px;
     font-weight: bold;
     margin: 5%;
 
@@ -79,7 +117,7 @@ h2 {
 .texSobreMi {
     width: 50%;
     color: white;
-    font-size: 23px;
+    font-size: 20px;
     line-height: 1.1;
     z-index: 4;
     margin: 9%;
@@ -108,7 +146,7 @@ h2 {
     font-family: 'Times New Roman', Times, serif;
     color: var(--blanco);
     text-align: center;
-    font-size: 100px;
+    font-size: 60px;
     font-weight: bold;
     margin: 5%;
 
@@ -117,14 +155,18 @@ h2 {
 .contenedorProyectos {
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 .card {
     width: 18rem;
-    margin: 2%;
+    margin: 20px;
     background-color: #430e67;
     color: #f8f7f7;
     font-family: unset;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
 }
 
 .card-img-top {
@@ -144,15 +186,56 @@ h2 {
     justify-content: center;
 }
 
+.tecnoUsadas{
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4%;
+}
+
+.tecnoUsadas img {
+    width: 55px;
+    height: 55px;
+    padding: 5px;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #9266B6;
+     
+}
+
+.tecnoUsadas img:hover {
+    transform: rotate(360deg) scale(1.15);
+}
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.boton {
+    text-decoration: none;
+    color: white;
+    background-color: var(--morado);
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: var(--moradoClaro);
+    color: var(--azulOscuro);
+}
 
 /*CONTACTOS*/
 .titulocontacto {
     font-family: 'Times New Roman', Times, serif;
     color: var(--blanco);
     text-align: center;
-    font-size: 100px;
+    font-size: 60px;
     font-weight: bold;
-    margin: 5%;
+    margin: 4%;
 
 }
 
@@ -170,22 +253,28 @@ h2 {
 
 .redes {
     display: flex;
-    gap: 60px;
-    margin-top: 65px;
+    gap: 25px;
+    margin-top: 40px;
 
 
 }
 
 .imagenRedes {
-    width: 90%;
-    height: 90px;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 40%;
+
+}
+.imagenRedes:hover {
+    transform: scale(1.15) rotate(5deg);
 }
 
 .imgcontactame {
 
 
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: 50%;
     right: 80px;
@@ -194,6 +283,12 @@ h2 {
     margin: 10%;
 }
 
+.infoEimag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
 /* Skills*/
 
 .skill{
@@ -204,34 +299,29 @@ h2 {
     text-align: center;
     color: white;
     font-family: Georgia, serif;
-    font-size: 40px;
+    font-size: 60px;
     margin-bottom: 40px;
 }
 
 
 .imagenes {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 45px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
     justify-items: center;
 }
 
 
 /* Círculos */
 .imagenes img {
-    width: 120px;
-    height: 120px;
-
-    padding: 30px;
-
+    width: 90px;
+    height: 90px;
+    padding: 20px;
     object-fit: contain;
-
     background-color: #f1f1f1;
-
     border-radius: 50%;
-
     transition: transform 0.3s;
 }
 
